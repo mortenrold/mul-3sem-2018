@@ -1,0 +1,99 @@
+<!doctype html>
+<html>
+<head>
+	<meta charset="UTF-8">
+	<title>Post-it</title>
+	<link href="https://fonts.googleapis.com/css?family=Indie+Flower" rel="stylesheet">
+	<style>
+		* {
+			margin: 0;
+			padding: 0;
+		}
+		body {
+			margin: 50px;
+			display: flex;
+			flex-wrap: wrap;
+		}
+		.postit {
+			margin: 20px;
+			width: 300px;
+			height: 300px;
+			background: linear-gradient(135deg, #D9D81F, #EDEC7D);
+			padding: 15px;
+			box-shadow: 2px 3px 5px -4px black;
+			border-bottom-right-radius: 130px 7px;
+			transform: rotate(-3deg);
+			font-family: 'Indie Flower', cursive;
+		}
+		
+		/* :nth-child = tager ét objekt ud af en række af objekter */
+		.postit:nth-child(2) {
+			transform: rotate(1deg);
+		}
+		.postit:nth-child(3) {
+			transform: rotate(3deg);
+		}
+		.postit:nth-child(4) {
+			transform: rotate(-5deg);
+		}
+		.postit:nth-child(5) {
+			transform: rotate(2deg);
+		}
+		.postit:nth-child(6) {
+			transform: rotate(0deg);
+		}
+		h2 {
+			margin-bottom: 10px;
+		}
+		.name {
+			margin: 10px;
+			position: absolute;
+			right: 0;
+			bottom: 0;
+		}
+		time {
+			display: block;
+			text-align: right;
+		}
+	</style>
+</head>
+
+<body>
+	<div class="postit">
+		<time>Dato</time>
+		<h2>Overskrift</h2>
+		<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Perferendis, eveniet distinctio nesciunt quis.</p>
+		<p class="name">MORO</p>
+	</div>
+	<div class="postit">
+		<time>Dato</time>
+		<h2>Overskrift</h2>
+		<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Perferendis, eveniet distinctio nesciunt quis.</p>
+		<p class="name">MORO</p>
+	</div>
+	<div class="postit">
+		<time>Dato</time>
+		<h2>Overskrift</h2>
+		<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Perferendis, eveniet distinctio nesciunt quis.</p>
+		<p class="name">MORO</p>
+	</div>
+	<div class="postit">
+		<time>Dato</time>
+		<h2>Overskrift</h2>
+		<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Perferendis, eveniet distinctio nesciunt quis.</p>
+		<p class="name">MORO</p>
+	</div>
+	<div class="postit">
+		<time>Dato</time>
+		<h2>Overskrift</h2>
+		<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Perferendis, eveniet distinctio nesciunt quis.</p>
+		<p class="name">MORO</p>
+	</div>
+	<div class="postit">
+		<time>Dato</time>
+		<h2>Overskrift</h2>
+		<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Perferendis, eveniet distinctio nesciunt quis.</p>
+		<p class="name">MORO</p>
+	</div>
+</body>
+</html>

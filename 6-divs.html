@@ -5,14 +5,26 @@
     <title>6 divs</title>
     <style>
         .box {
-            max-width: 200px;
+            width: 200px;
             height: 6em;
             background: lightgray;
             padding: 10px;
             margin: 10px;
             font: 700 2em sans-serif;
             color: white;
-        }     
+        }    
+		body {
+			display: flex;
+			flex-wrap: wrap;
+			max-width: 50%;
+			height: 100%;
+			align-content: center;
+			margin: 0 auto;
+			justify-content: center;
+		}
+		html {
+			height: 100%;
+		}
     </style>
 </head>
     <body>
