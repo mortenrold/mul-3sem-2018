@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+        }
+        body {
+            font-family: sans-serif;
+            font-size: smaller;
+        }
+        form {
+            max-width: 250px;
+            padding: 30px;
+            background: lightgray;
+            margin: 30px;
+        }
+        #one label {
+            display: block;
+            margin: 10px 0 3px 0;
+        }
+        #two {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: flex-end;
+        }
+        #two div {
+            margin-bottom: 10px;
+        }
+        #three div {
+            display: flex;
+            justify-content: space-between;
+            margin-bottom: 10px;
+        }
+        #four input {
+            margin-bottom: 10px;
+        }
+        p {
+            margin: 30px 0 -20px 30px;
+            font-weight: 700;
+        }
+    </style>
+</head>
+<body>
+    <p>Label over</p>
+    <form id="one" action="do-stuff.php">
+        <label>Navn</label>
+        <input type="text">
+        <label>Mobilnummer</label>
+        <input type="text">
+    </form>
+    
+    <p>Label højrestillet</p>
+    <form id="two">
+        <div>
+            <label>Navn</label>
+            <input type="text">
+        </div>
+        <div>
+            <label>Mobilnummer</label>
+            <input type="text">
+        </div>
+    </form>
+    
+    <p>Label venstrestillet</p>
+    <form id="three">
+        <div>
+            <label>Navn</label>
+            <input type="text">
+        </div>
+        <div>
+            <label>Mobilnummer</label>
+            <input type="text">
+        </div>
+    </form>
+    
+    <p>Label som placeholder</p>
+    <form id="four">
+        <input type="text" placeholder="Navn">
+        <input type="text" placeholder="Mobilnummer">
+    </form>
+    
+</body>
+</html>

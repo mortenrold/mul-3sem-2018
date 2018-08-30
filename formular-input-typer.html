@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+    <style>
+        body {
+            font-family: sans-serif;
+            font-size: 0.8em;
+        }
+        #secondary {
+            border: none;
+            text-decoration: underline;
+        }
+        #primary {
+            background: lightgray;
+        }
+        p {
+            font-weight: 700;
+            margin-top: 40px;
+        }
+        #farve {
+            background: #eee; 
+        }
+    </style>
+</head>
+<body>
+    <form action="do-stuff.php" method="get">
+        <p>Tekstfelt én linje</p>
+        <input type="text" name="navn" required>
+        
+        <p>e-mail</p>
+        <input type="email" name="email" autofocus>
+        
+        <p>Radioknapper</p>
+        <label><input type="radio" name="koen" value="mand">Mand</label>
+        <label><input type="radio" name="koen" value="kvinde">Kvinde</label>
+        
+        <p>Checkboks</p>
+
+        <input type="checkbox" name="farve" value="red">Rød
+        <input type="checkbox" name="farve" value="green">Grøn
+        <input type="checkbox" name="farve" value="blue">Blå
+        
+        <p>Select</p>
+        <select>
+            <option disapled selected>Vælg venligst...</option>
+            <option>Hund</option>
+            <option>Kat</option>
+            <option>Fugl</option>
+            <option>Fisk</option>
+            <option>Mus</option>
+        </select>
+        
+        <p>Range</p>
+        dårlig<input type="range" min="1" max="10">god
+        
+        <p>Color</p>
+        <input type="color" name="farve" value="#e66465">
+        
+        <p>Dato</p>
+        <input type="date">
+        
+        <p></p>
+        <input type="file">
+        
+        <p></p>
+        <input id="primary" type="submit" value="Send til en ven">
+        <input id="secondary" type="reset" value="Nulstil">
+    </form>
+</body>
+</html>
