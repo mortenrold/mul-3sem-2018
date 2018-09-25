@@ -1,0 +1,16 @@
+h1 {
+    font-family: helvetica, sans-serif;
+    font-weight: 100;
+    color: #3a62bc;
+}
+p {
+    font-family: georgia, serif;
+    color: #3a62bc;
+}
+button {
+    width: 120px;
+    background: #3a62bc;
+    color: white;
+    padding: 10px 15px;
+    border: none;
+}

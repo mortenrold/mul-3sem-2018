@@ -1,0 +1,29 @@
+// Mine "grundlæggende" styles - fonte, farver osv.
+
+$my-height: 50px;
+
+p {
+    font-family: helvetica, arial, sans-serif;
+    color: green;
+}
+.logo {
+    background: whitesmoke;
+    height: $my-height;
+}
+.nav {
+    background: grey;
+    height: $my-height;
+}
+.boks {
+    background: lightgray;
+    height: $my-height*4;
+}
+footer {
+    background: darkgray;
+    height: $my-height;
+}
+
+
+
+
+

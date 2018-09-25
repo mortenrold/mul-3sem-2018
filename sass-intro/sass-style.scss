@@ -1,0 +1,72 @@
+// Sass-filen
+/* Dette er en klassisk CSS-kommentar */
+
+// variabler
+$brand-color: #237da5;
+$my-width: 400px;
+
+// mixins
+@mixin rounded-corners ($radius: 10px){   // vendor-prefixes
+    -webkit-border-radius: $radius;
+    -moz-border-radius: $radius;
+    -ms-border-radius: $radius;
+    -o-border-radius: $radius;
+    border-radius: $radius;
+}
+
+h1 {
+    font-family: helvetica, sans-serif;
+    font-weight: 100;
+    color: $brand-color;
+}
+h2 {
+    @extend h1;
+    color: brown;
+}
+
+
+p {
+    font-family: georgia, serif;
+    color: $brand-color;
+}
+button {
+    width: 120px;
+    background: $brand-color;
+    color: white;
+    padding: 10px 15px;
+    border: none;
+    &:hover {  // & gør, at :hover kommer til at sidde helt tæt button ("button:hover")
+        background: lighten($brand-color, 7%); // dette er en function
+    }
+    @include rounded-corners;
+}
+
+button#special {
+    color: yellow;
+}
+
+// nested selectors (indlejrede elementer)
+div {
+    background: $brand-color;
+    width: $my-width;
+    p {
+        color: red;
+    }
+    :hover {
+        background: red;
+    }
+    @include rounded-corners(5px);
+}
+
+// operator
+.box2 {
+    width: ($my-width * 2); 
+}
+
+
+
+
+
+
+
+
